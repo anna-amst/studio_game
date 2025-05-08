@@ -17,10 +17,13 @@ class Game
       rand(1..6)
     end
   
-    def play
+    def play (rounds = 1)
       puts "\nBefore playing #{@title}:"
       puts @players
   
+      1.upto(rounds) do|round|
+      puts "\nRounds #{round}:"
+
       @players.each do |player|
         number_rolled = roll_die
         
@@ -35,6 +38,7 @@ class Game
           puts "#{player.name} got boosted 😁"
         end 
         end
+      end
       
       puts "\nAfter playing:"  
       puts @players

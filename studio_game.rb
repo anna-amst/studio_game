@@ -21,7 +21,7 @@ game = Game.new("Chipmunks")
 game.add_player(player_5)
 game.add_player(player_6)
 game.add_player(player_7)
-game.play
+game.play(3)
 
 
  
